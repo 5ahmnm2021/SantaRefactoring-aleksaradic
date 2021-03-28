@@ -43,10 +43,12 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)   {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         if(collision.gameObject.tag == "Ground")
         {
-            grounded = true;}
+            grounded = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -58,8 +60,4 @@ public class PlayerController : MonoBehaviour
             gameOver = SetGameOverTrue();
         }
     }
-
-
-
-
 }
