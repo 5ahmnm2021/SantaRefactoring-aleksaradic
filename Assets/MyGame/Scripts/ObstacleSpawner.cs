@@ -1,17 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
     public static ObstacleSpawner instance;
-
     public GameObject[] obstacles;
-
     public bool gameOver = false;
-
     public float minSpawnTime, maxSpawnTime;
-
 
     private void Awake()
     {
